@@ -1,0 +1,937 @@
+/* Common */
+@import url("https://fonts.googleapis.com/css?family=Marcellus+SC|Open+Sans:300,400,600");
+
+.hide {
+  display: none;
+}
+
+body {
+  margin: 0;
+}
+.clear {
+  clear: both;
+}
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+}
+.tr3 {
+  transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s;
+}
+.bxs {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.brr {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.op6:hover {
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  -o-opacity: 0.7;
+  -webkit-opacity: 0.7;
+  -ms-opacity: 0.7;
+}
+
+/* Layout */
+#wrapper {
+  width: 100%;
+  background: #eee;
+  color: #4c0202;
+}
+#tempIn {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #200000;
+}
+
+/* Header */
+header#hdr {
+  background: url(hdrbg.png) repeat-x left top;
+  background-size: auto 100%;
+}
+#hdrIn {
+  background: url(hdrinbg.jpg) no-repeat right top;
+  background-size: auto 100%;
+}
+#logo {
+  float: left;
+  padding: 20px 0 40px 35px;
+}
+#logo img {
+  width: 300px;
+}
+#hdrRght {
+  float: right;
+  padding: 15px;
+  text-align: center;
+  border: 4px solid rgba(235, 190, 126, 0.3);
+  border-top: none;
+  border-right: none;
+  border-radius: 0 0 0 5px;
+  -moz-border-radius: 0 0 0 5px;
+  -webkit-border-radius: 0 0 0 5px;
+  background: url(topbarbg.png) repeat-x top left;
+  background-size: auto 100%;
+}
+#infoLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#infoLinks li {
+  float: left;
+  display: block;
+  padding: 0 15px;
+  font: 400 11px "Open Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+#infoLinks li a {
+  text-decoration: none;
+}
+#infoLinks li a:link,
+#infoLinks li a:visited {
+  color: #ebbe7e;
+}
+#infoLinks li a:hover {
+  color: #eee;
+}
+#infoLinks li:nth-child(1) a {
+  background: url(icstar.svg) no-repeat left center;
+  background-size: auto 11px;
+  padding-left: 15px;
+}
+#infoLinks li:nth-child(2) a {
+  background: url(icfollow.svg) no-repeat left center;
+  background-size: auto 10px;
+  padding-left: 16px;
+}
+#infoLinks li:nth-child(3) a {
+  background: url(icmsg.svg) no-repeat left center;
+  background-size: auto 10px;
+  padding-left: 18px;
+}
+
+/* Top Horizontal Menu */
+#topNav {
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 0 10px #000;
+}
+#topNav > ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+#topNav > ul > li {
+  position: relative;
+  float: left;
+  background: #fcda8a url(topnavbg.png) repeat-x top left;
+  background-size: auto 100%;
+  font: 400 15px "Marcellus SC", Times, serif;
+  text-align: center;
+  transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  -ms-transition: all ease-in 0.3s;
+}
+#topNav > ul > li:hover {
+  background: url(../images/topnavhbg.png) repeat-x top left;
+  background-size: auto 100%;
+}
+#topNav > ul > li:nth-child(1) {
+  width: 21%;
+}
+#topNav > ul > li:nth-child(2) {
+  width: 14%;
+}
+#topNav > ul > li:nth-child(3) {
+  width: 14%;
+}
+#topNav > ul > li:nth-child(4) {
+  width: 14%;
+}
+#topNav > ul > li:nth-child(5) {
+  width: 17%;
+}
+#topNav > ul > li:nth-child(6) {
+  width: 20%;
+}
+#topNav > ul > li:nth-child(7) {
+  width: 14%;
+  display: none;
+}
+#topNav > ul > li > a,
+#topNav > ul > li > span {
+  display: block;
+  padding: 18px 0;
+  color: #200000;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+#topNav > ul > li > a {
+  background: url(topnavdiv.png) no-repeat right center;
+  background-size: auto 100%;
+}
+#topNav > ul > li:nth-child(6) > a {
+  background-image: none;
+}
+#topNav > ul > li > a:link,
+#topNav > ul > li > a:visited {
+  color: #200000;
+}
+#topNav > ul > li > a:hover,
+#topNav > ul > li > span:hover {
+  color: #200000;
+}
+#topNav > ul > li:hover > a,
+#topNav > ul > li:hover > span {
+  color: #200000;
+}
+#topNav > ul > li > ul {
+  display: none;
+}
+#topNav > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -1px;
+  margin-left: -1px;
+  padding: 0;
+  list-style: none;
+  background: #fddb8b;
+}
+#topNav > ul > li:nth-child(7) > ul {
+  width: 100%;
+  right: 0;
+}
+#topNav > ul > li:hover > ul > li {
+  text-align: center;
+  font: 400 13px "Open Sans", Arial, sans-serif;
+  border-bottom: 1px solid #ecc478;
+  border-top: 1px solid #f9e9c4;
+}
+#topNav > ul > li:hover > ul > li:nth-child(1) {
+  border-top: none;
+}
+#topNav > ul > li:hover > ul > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+#topNav > ul > li:hover > ul > li > a:link,
+#topNav > ul > li:hover > ul > li > a:visited {
+  color: #200000;
+}
+#topNav > ul > li:hover > ul > li > a:hover {
+  background: #200000;
+  color: #fff;
+}
+#topNav > ul > li:hover > ul > li:last-child {
+  border-bottom: none;
+}
+#mobMenu {
+  display: none;
+  background: #fcda8a url(topnavbg.png) repeat-x top left;
+  background-size: auto 100% !important;
+}
+#mobMenu .toggle,
+[id^="drop"] {
+  display: none;
+  cursor: pointer;
+}
+#mobMenu #toggleFirst {
+  margin-left: 10px;
+  padding: 15px;
+  padding-left: 40px;
+  background: url(icmenu.svg) no-repeat left center;
+  background-size: 30px auto;
+  font: 400 26px "Marcellus SC", Times, serif;
+  text-transform: uppercase;
+  color: #200000;
+}
+nav#mobMenu {
+  margin: 0;
+  padding: 0;
+}
+nav#mobMenu [id^="drop"]:checked + ul {
+  display: block;
+}
+nav#mobMenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav#mobMenu > ul {
+  float: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+nav#mobMenu > ul > li {
+  display: block;
+  width: 100%;
+  font: 400 18px "Open Sans", Arial, sans-serif;
+  background: #f7e5ba;
+  border-bottom: 1px solid #fff;
+}
+nav#mobMenu > ul > li:nth-child(7) {
+  display: none;
+}
+nav#mobMenu > ul li > a:after {
+  content: " +";
+}
+nav#mobMenu > ul li > a:only-child:after {
+  content: "";
+}
+nav#mobMenu > ul > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: #200000;
+  text-decoration: none;
+}
+nav#mobMenu > ul > li > a:hover {
+  background: #200000;
+  color: #fff;
+}
+nav#mobMenu .toggle + a,
+nav#mobMenu .menu {
+  display: none;
+}
+nav#mobMenu .toggle {
+  display: block;
+  padding: 15px 20px;
+  color: #200000;
+}
+nav#mobMenu .toggle:hover {
+  background: #fdf6eb;
+  color: #200000;
+}
+nav#mobMenu li:hover .toggle {
+  background: #200000 !important;
+  color: #fff !important;
+}
+nav#mobMenu ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav#mobMenu ul li:hover ul {
+  display: inherit;
+}
+nav#mobMenu ul ul li {
+  width: 100%;
+  display: block;
+  font: 400 16px "Open Sans", Arial, sans-serif;
+  background: #fdf6eb;
+  border-bottom: 1px solid #fff;
+}
+nav#mobMenu ul ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #200000;
+  text-decoration: none;
+}
+nav#mobMenu ul ul li a:hover {
+  background: #200000;
+  color: #fff;
+}
+nav#mobMenu ul ul {
+  float: none;
+  position: static;
+}
+nav#mobMenu ul ul li:hover > ul,
+nav#mobMenu ul li:hover > ul {
+  display: none;
+}
+
+/* Content Block */
+#contBlock {
+  position: relative;
+  z-index: 50;
+  margin: 15px;
+  margin-bottom: 0;
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+
+/* Title */
+#prodTitle {
+  margin-bottom: 15px;
+  text-align: center;
+}
+#prodTitle h1 {
+  margin: 0;
+  padding: 0;
+  font: 400 24px "Marcellus SC", Times, serif;
+  color: #4c0202;
+  text-transform: uppercase;
+}
+
+/* Gallery */
+#gallBlock {
+  float: left;
+  width: 500px;
+  overflow: hidden;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#gallBlock .lrgImg {
+  display: none;
+  min-height: 500px;
+}
+#gallBlock .lrgImg .imgLgIn {
+  display: table-cell;
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  vertical-align: middle;
+  text-align: center;
+  background: #f6f6f6;
+}
+#gallBlock .lrgImg .imgLgIn img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#gallBlock .lrgImg .imgLgIn video {
+  max-width: 100%;
+  max-height: 100%;
+}
+#gallBlock input {
+  display: none;
+}
+#gallBlock #gallThumbs {
+  text-align: center;
+  margin-top: 5px;
+}
+#gallBlock label {
+  display: inline-block;
+  width: 77px;
+  margin: 0;
+  padding: 0;
+}
+#gallBlock label .imgSmIn {
+  display: table-cell;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  background: #f6f6f6;
+}
+#gallBlock label .imgSmIn img {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+#gallBlock label .imgSmIn img:hover {
+  opacity: 0.85;
+}
+#gallBlock label:nth-child(1) {
+  border-radius: 0 0 0 5px;
+  -moz-border-radius: 0 0 0 5px;
+  -webkit-border-radius: 0 0 0 5px;
+  overflow: hidden;
+}
+#gallBlock label:nth-child(6) {
+  border-radius: 0 0 5px 0;
+  -moz-border-radius: 0 0 5px 0;
+  -webkit-border-radius: 0 0 5px 0;
+  overflow: hidden;
+}
+#gallBlock label:hover {
+  cursor: pointer;
+}
+#gallBlock input:checked + label {
+  background: #fff;
+}
+#gallBlock #img1:checked ~ #imgblock1,
+#gallBlock #img2:checked ~ #imgblock2,
+#gallBlock #img3:checked ~ #imgblock3,
+#gallBlock #img4:checked ~ #imgblock4,
+#gallBlock #img5:checked ~ #imgblock5,
+#gallBlock #img6:checked ~ #imgblock6 {
+  display: inline-block;
+}
+#gallBlock .hideImg {
+  display: none !important;
+}
+.hideImg {
+  display: none !important;
+}
+
+/* Specification Rows */
+#specsBlock {
+  float: right;
+  width: 385px;
+}
+.specsRow {
+  margin-bottom: 10px;
+}
+.descrHd {
+  font: 400 18px "Marcellus SC", Times, serif;
+  text-transform: uppercase;
+  color: #cf814b;
+}
+.specLine {
+  padding-bottom: 5px;
+  font: 600 14px "Open Sans", Arial, sans-serif;
+}
+.specLine::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.specR {
+  float: right;
+  font-weight: 400;
+  color: #555;
+}
+#specsBlock .specsRow:last-child {
+  margin-bottom: 0;
+}
+#specsBlock .specsRow:last-child .specLine:last-child {
+  padding-bottom: 0;
+}
+.specSpecial {
+  color: #d00;
+}
+.lineThrough {
+  text-decoration: line-through;
+}
+
+/* Description Block */
+#descrBlock {
+  float: left;
+  width: 500px;
+  margin-top: 15px;
+}
+#descrTxt {
+  font: 400 14px "Open Sans", Arial, sans-serif;
+  text-align: justify;
+  line-height: 20px;
+}
+#descrRight {
+  float: right;
+  width: 385px;
+}
+
+/* Item Includes */
+#itemIncl {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #fbf8ef;
+}
+#itemInclHd {
+  margin-bottom: 10px;
+  font: 400 20px "Marcellus SC", Times, serif;
+  text-transform: uppercase;
+  color: #c77a44;
+}
+#itemIncl img#itemIncImg {
+  float: left;
+  width: 90px;
+  margin-right: 15px;
+}
+#itemIncl ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#itemIncl ul li {
+  padding: 4px 0;
+  padding-left: 23px;
+  background: url(ictick.svg) no-repeat left center;
+  background-size: auto 14px;
+  font: 400 14px "Open Sans", Arial, sans-serif;
+}
+
+/* Contact Button */
+#btnContact {
+  text-align: center;
+}
+#btnContact a {
+  display: block;
+  padding: 15px 0;
+  font: 600 18px "Open Sans", Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #000;
+  border: 1px solid #790505;
+}
+#btnContact a:link,
+#btnContact a:visited {
+  background: url(btnredh.png) repeat-x top center;
+  background-size: auto 100%;
+  color: #f6c6a5;
+}
+#btnContact a:hover {
+  background: url(btnred.png) repeat-x top center;
+  background-size: auto 100%;
+}
+
+/* Upgrade Options */
+#upgrOptions {
+  z-index: 40;
+  margin: 15px;
+  margin-top: -5px;
+  padding: 1px 10px;
+  background: url(optionsbg.png) repeat-x top left;
+  background-size: auto 100%;
+  border-bottom: 3px solid #790606;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+.upgrOp {
+  float: left;
+  width: 33.333%;
+  padding: 15px;
+  padding-top: 20px;
+  background: url(optionsdiv.png) no-repeat right top;
+  background-size: auto 100%;
+  font: 400 12px "Open Sans", Arial, sans-serif;
+}
+.upgrOp a {
+  display: block;
+  text-decoration: none;
+}
+.upgrOp a:link,
+.upgrOp a:visited {
+  color: #fae2d2;
+}
+.upgrOp a:hover,
+.upgrOp a:hover span,
+.upgrOp a:hover em {
+  color: #fff;
+}
+.upgrOp:nth-child(3) {
+  background: none;
+}
+.upgrOp img {
+  margin-right: 10px;
+}
+#upgrOp1 img {
+  float: left;
+  height: 50px;
+}
+#upgrOp2 img {
+  float: left;
+  height: 50px;
+}
+#upgrOp3 img {
+  float: left;
+  height: 45px;
+}
+.upgrOp span {
+  display: block;
+  font: 400 16px "Marcellus SC", Times, serif;
+  text-transform: uppercase;
+  color: #f6c6a5;
+}
+.upgrOp em {
+  display: block;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fadbc6;
+}
+
+/* Shop by Shape */
+#shopByShape {
+  margin: 15px;
+  background: #fbf8ef;
+  overflow: hidden;
+}
+/*#shopByShapeHd {margin-bottom: 10px; font: 400 20px 'Marcellus SC', Times, serif; text-transform: uppercase; color: #200000; text-align: center;}*/
+#shopByShape ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#shopByShape ul li {
+  float: left;
+  width: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  font: 400 10px "Open Sans", Arial, sans-serif;
+  transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s;
+}
+#shopByShape ul li:hover {
+  background: #f0ca7c;
+}
+#shopByShape ul li img {
+  height: 40px;
+}
+#shopByShape ul li span {
+  display: block;
+  margin-top: 5px;
+}
+#shopByShape ul li a {
+  display: block;
+  padding: 15px 0 10px 0;
+  text-decoration: none;
+}
+#shopByShape ul li a:link,
+#shopByShape ul li a:visited {
+  color: #200000;
+}
+#shopByShape ul li a:hover {
+  color: #200000;
+}
+
+/* Featured Categories */
+/*#fCatsBlock {margin: 0 15px; margin-top: 15px;}*/
+#fCatsBlock {
+  margin: 0 15px;
+  margin-top: 15px;
+  padding-left: 150px;
+  background: url(model.png) no-repeat top left;
+  background-size: auto 100%;
+}
+.fCat {
+  float: left;
+  position: relative;
+  width: 23.87%;
+  height: 125px;
+  margin-right: 1.5%;
+  padding: 0 15px;
+  padding-bottom: 0;
+  overflow: hidden;
+  background-color: #3c0303;
+  border: 1px solid #4b0808;
+  text-align: center;
+}
+.fCat:hover {
+  background-color: #4b0808;
+}
+#fCat1,
+#fCat2,
+#fCat3,
+#fCat4 {
+  margin-bottom: 15px;
+}
+#fCat4,
+#fCat8 {
+  margin-right: 0;
+}
+.fCat a {
+  display: block;
+  text-decoration: none;
+}
+.fCat img {
+  height: 80px;
+  padding-top: 15px;
+}
+#fCat5 img {
+  height: 75px;
+  padding-top: 5px;
+}
+#fCat6 img {
+  height: 85px;
+  padding-top: 0;
+}
+#fCat7 img {
+  width: 90%;
+  height: auto;
+  padding-top: 35px;
+}
+.fCat span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 8px 0;
+  background: url(fcatbg.png) repeat-y top center;
+  background-size: 100% auto;
+  font: 400 12px "Marcellus SC", Times, serif;
+  text-transform: uppercase;
+  color: #f6c6a5;
+  text-shadow: 0 0 2px #000;
+}
+
+/* Policy */
+#polTabs {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#polTabs label {
+  display: block;
+  padding: 15px 0;
+  font: 400 17px "Marcellus SC", Times, serif;
+  text-transform: uppercase;
+  text-align: center;
+  background: #fbf8ef url(topnavbg.png) repeat-x top left;
+  background-size: auto 100%;
+  border-right: 1px solid #833c0f;
+  border-left: 1px solid #d8b27d;
+  color: #200000;
+  cursor: pointer;
+}
+#polTabs label[for="polTab1"] {
+  width: 22% !important;
+  border-left: none;
+}
+#polTabs label[for="polTab2"] {
+  width: 30% !important;
+}
+#polTabs label[for="polTab3"] {
+  width: 27% !important;
+}
+#polTabs label[for="polTab4"] {
+  width: 21% !important;
+  border-right: none;
+}
+#polTabs .polTabContent {
+  display: none;
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  padding: 15px;
+  font: 400 14px "Open Sans", Arial, sans-serif;
+  color: #111;
+  text-align: justify;
+  background: #fbf8ef;
+  line-height: 22px;
+}
+#polTabs input[type="radio"] {
+  display: none;
+}
+#polTabs input[type="radio"]:checked + label {
+  background: #fbf8ef;
+  color: #111;
+}
+#polTabs input[type="radio"]:checked + label + .polTabContent {
+  display: block;
+}
+.polHd {
+  margin-bottom: 5px;
+  font: 600 18px "Open Sans", Arial, sans-serif;
+  color: #111;
+}
+.polSpace {
+  padding-top: 15px;
+}
+
+/* Footer */
+footer#foot {
+  background: url(footerbg.png) repeat-x top left;
+  background-size: auto 100%;
+}
+#footIn {
+  padding: 15px 25px;
+  background: url(footermotif.jpg) no-repeat right top;
+  background-size: auto 100%;
+}
+#satSeal {
+  float: left;
+}
+#satSeal img {
+  height: 65px;
+}
+#giaSeal {
+  float: left;
+  display: flex;
+  padding-left: 15px;
+}
+#giaSeal img {
+  float: left;
+  height: 65px;
+  margin-right: 10px;
+}
+#iggSeal {
+  float: left;
+  display: flex;
+  padding-left: 15px;
+}
+#iggSeal img {
+  float: left;
+  height: 65px;
+  margin-right: 10px;
+}
+.labNm {
+  font: normal 38px Times, "Times New Roman", serif;
+  color: #d09e59;
+}
+.labNm span {
+  display: block;
+  font: normal 10px Times, "Times New Roman", serif;
+  color: #e1bc88;
+  text-transform: uppercase;
+}
+#logofoot {
+  float: right;
+}
+#logofoot img {
+  height: 55px;
+}
+
+/* Footer Bottom */
+#footerBot {
+  padding: 10px 0;
+  background: #eee;
+}
+#copyNote {
+  float: left;
+  font: 400 10px "Open Sans", Arial, sans-serif;
+  color: #777;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+#copyNote img {
+  height: 13px !important;
+  margin: 0;
+  vertical-align: middle;
+}
+#footSeals {
+  float: right;
+}
+#footSeals img {
+  height: 20px;
+  margin-left: 10px;
+}
